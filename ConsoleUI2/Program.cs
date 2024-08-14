@@ -34,7 +34,7 @@ Car car = new Car
 };
 
 
-foreach (var car1 in carManager.GetCarDetails())
+foreach (var car1 in carManager.GetCarDetails().data)
 {
     Console.WriteLine(car1.BrandName+"/"+car1.ColorName+"/"+car1.DailyPrice+"/"+car1.Description);
 }
