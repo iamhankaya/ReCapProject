@@ -64,8 +64,12 @@ namespace Business.Concrete
 
         public Result ReturnCar(int carId)
         {
-            _rentalDal.ReturnCar(carId);
-            return new SuccessResult(Messages.SuccessfullyReturned);
+            if (_rentalDal.ReturnCar(carId) != null)
+            {
+                _rentalDal.ReturnCar(carId);
+                return new SuccessResult(Messages.SuccessfullyReturned);
+            }
+            return new ErrorResult("Araba zaten kiralanmamış");
         }
 
         public Result Update(Rental entity)

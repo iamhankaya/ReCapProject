@@ -27,7 +27,7 @@ namespace DataAccess.Concrete.EntityFramework
 
             this.Add(rental);
         }
-        public void ReturnCar(int carId)
+        public Rental ReturnCar(int carId)
         {
             Rental RentalToUpdate = this.Get(r => r.CarId == carId && r.ReturnDate == "Not Returned");
             if (RentalToUpdate != null)
@@ -35,6 +35,7 @@ namespace DataAccess.Concrete.EntityFramework
                 RentalToUpdate.ReturnDate = DateTime.Now.ToString();
                 this.Update(RentalToUpdate);
             }
+            return RentalToUpdate;
         }
         public List<SpesificCarRentalDetail> GetCarRentDetail(int carId, Expression<Func<IDto, bool>> filter = null)
         {
