@@ -77,3 +77,7 @@ C:\Users\Metohanhan\source\repos\ReCapProject\WebAPI\obj\Debug\net8.0\refint\Web
 C:\Users\Metohanhan\source\repos\ReCapProject\WebAPI\obj\Debug\net8.0\WebAPI.pdb
 C:\Users\Metohanhan\source\repos\ReCapProject\WebAPI\obj\Debug\net8.0\WebAPI.genruntimeconfig.cache
 C:\Users\Metohanhan\source\repos\ReCapProject\WebAPI\obj\Debug\net8.0\ref\WebAPI.dll
+C:\Users\Metohanhan\source\repos\ReCapProject\WebAPI\bin\Debug\net8.0\Autofac.dll
+C:\Users\Metohanhan\source\repos\ReCapProject\WebAPI\bin\Debug\net8.0\Autofac.Extensions.DependencyInjection.dll
+C:\Users\Metohanhan\source\repos\ReCapProject\WebAPI\bin\Debug\net8.0\Autofac.Extras.DynamicProxy.dll
+C:\Users\Metohanhan\source\repos\ReCapProject\WebAPI\bin\Debug\net8.0\Castle.Core.dll

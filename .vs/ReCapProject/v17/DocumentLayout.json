@@ -3,16 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\Metohanhan\\source\\repos\\ReCapProject\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B9EA977A-B277-4374-8486-FC121F63ABAF}|Core\\Core.csproj|c:\\users\\metohanhan\\source\\repos\\recapproject\\core\\crosscuttingconcerns\\validation\\validationtool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9EA977A-B277-4374-8486-FC121F63ABAF}|Core\\Core.csproj|solutionrelative:core\\crosscuttingconcerns\\validation\\validationtool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E34BFD40-48B8-468F-82BA-37436338CBCB}|Business\\Business.csproj|c:\\users\\metohanhan\\source\\repos\\recapproject\\business\\validationrules\\fluentvalidation\\carvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E34BFD40-48B8-468F-82BA-37436338CBCB}|Business\\Business.csproj|solutionrelative:business\\validationrules\\fluentvalidation\\carvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E34BFD40-48B8-468F-82BA-37436338CBCB}|Business\\Business.csproj|c:\\users\\metohanhan\\source\\repos\\recapproject\\business\\dependencyresolvers\\autofac\\autofacbusinessmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E34BFD40-48B8-468F-82BA-37436338CBCB}|Business\\Business.csproj|solutionrelative:business\\dependencyresolvers\\autofac\\autofacbusinessmodule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E92E4A7-785A-45C0-8271-5EAA79B007C6}|WebAPI\\WebAPI.csproj|c:\\users\\metohanhan\\source\\repos\\recapproject\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E92E4A7-785A-45C0-8271-5EAA79B007C6}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E34BFD40-48B8-468F-82BA-37436338CBCB}|Business\\Business.csproj|c:\\users\\metohanhan\\source\\repos\\recapproject\\business\\concrete\\rentalmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E34BFD40-48B8-468F-82BA-37436338CBCB}|Business\\Business.csproj|solutionrelative:business\\concrete\\rentalmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E34BFD40-48B8-468F-82BA-37436338CBCB}|Business\\Business.csproj|c:\\users\\metohanhan\\source\\repos\\recapproject\\business\\concrete\\carmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E34BFD40-48B8-468F-82BA-37436338CBCB}|Business\\Business.csproj|solutionrelative:business\\concrete\\carmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9EA977A-B277-4374-8486-FC121F63ABAF}|Core\\Core.csproj|c:\\users\\metohanhan\\source\\repos\\recapproject\\core\\utilities\\results\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9EA977A-B277-4374-8486-FC121F63ABAF}|Core\\Core.csproj|solutionrelative:core\\utilities\\results\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9EA977A-B277-4374-8486-FC121F63ABAF}|Core\\Core.csproj|c:\\users\\metohanhan\\source\\repos\\recapproject\\core\\dataaccess\\entityframework\\efentityrepositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9EA977A-B277-4374-8486-FC121F63ABAF}|Core\\Core.csproj|solutionrelative:core\\dataaccess\\entityframework\\efentityrepositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0E9BC895-4E69-4D47-90FE-537EF5117ED7}|DataAccess\\DataAccess.csproj|c:\\users\\metohanhan\\source\\repos\\recapproject\\dataaccess\\concrete\\entityframework\\efrentaldal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0E9BC895-4E69-4D47-90FE-537EF5117ED7}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\concrete\\entityframework\\efrentaldal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0E9BC895-4E69-4D47-90FE-537EF5117ED7}|DataAccess\\DataAccess.csproj|c:\\users\\metohanhan\\source\\repos\\recapproject\\dataaccess\\concrete\\entityframework\\efcardal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0E9BC895-4E69-4D47-90FE-537EF5117ED7}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\concrete\\entityframework\\efcardal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E92E4A7-785A-45C0-8271-5EAA79B007C6}|WebAPI\\WebAPI.csproj|c:\\users\\metohanhan\\source\\repos\\recapproject\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E92E4A7-785A-45C0-8271-5EAA79B007C6}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5E92E4A7-785A-45C0-8271-5EAA79B007C6}|WebAPI\\WebAPI.csproj|c:\\users\\metohanhan\\source\\repos\\recapproject\\webapi\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,10 +79,6 @@
       "RelativeMoniker": "D:0:0:{5E92E4A7-785A-45C0-8271-5EAA79B007C6}|WebAPI\\WebAPI.csproj|solutionrelative:webapi\\controllers\\brandscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E34BFD40-48B8-468F-82BA-37436338CBCB}|Business\\Business.csproj|c:\\users\\metohanhan\\source\\repos\\recapproject\\business\\concrete\\rentalmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E34BFD40-48B8-468F-82BA-37436338CBCB}|Business\\Business.csproj|solutionrelative:business\\concrete\\rentalmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0E9BC895-4E69-4D47-90FE-537EF5117ED7}|DataAccess\\DataAccess.csproj|c:\\users\\metohanhan\\source\\repos\\recapproject\\dataaccess\\abstract\\irentaldal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0E9BC895-4E69-4D47-90FE-537EF5117ED7}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\abstract\\irentaldal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -73,8 +97,85 @@
               "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CarValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Metohanhan\\source\\repos\\ReCapProject\\Business\\ValidationRules\\FluentValidation\\CarValidator.cs",
+              "RelativeDocumentMoniker": "Business\\ValidationRules\\FluentValidation\\CarValidator.cs",
+              "ToolTip": "C:\\Users\\Metohanhan\\source\\repos\\ReCapProject\\Business\\ValidationRules\\FluentValidation\\CarValidator.cs",
+              "RelativeToolTip": "Business\\ValidationRules\\FluentValidation\\CarValidator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T17:53:42.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ValidationTool.cs",
+              "DocumentMoniker": "C:\\Users\\Metohanhan\\source\\repos\\ReCapProject\\Core\\CrossCuttingConcerns\\Validation\\ValidationTool.cs",
+              "RelativeDocumentMoniker": "Core\\CrossCuttingConcerns\\Validation\\ValidationTool.cs",
+              "ToolTip": "C:\\Users\\Metohanhan\\source\\repos\\ReCapProject\\Core\\CrossCuttingConcerns\\Validation\\ValidationTool.cs",
+              "RelativeToolTip": "Core\\CrossCuttingConcerns\\Validation\\ValidationTool.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T17:52:50.633Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "CarManager.cs",
+              "DocumentMoniker": "C:\\Users\\Metohanhan\\source\\repos\\ReCapProject\\Business\\Concrete\\CarManager.cs",
+              "RelativeDocumentMoniker": "Business\\Concrete\\CarManager.cs",
+              "ToolTip": "C:\\Users\\Metohanhan\\source\\repos\\ReCapProject\\Business\\Concrete\\CarManager.cs",
+              "RelativeToolTip": "Business\\Concrete\\CarManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T17:45:40.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AutofacBusinessModule.cs",
+              "DocumentMoniker": "C:\\Users\\Metohanhan\\source\\repos\\ReCapProject\\Business\\DependencyResolvers\\Autofac\\AutofacBusinessModule.cs",
+              "RelativeDocumentMoniker": "Business\\DependencyResolvers\\Autofac\\AutofacBusinessModule.cs",
+              "ToolTip": "C:\\Users\\Metohanhan\\source\\repos\\ReCapProject\\Business\\DependencyResolvers\\Autofac\\AutofacBusinessModule.cs",
+              "RelativeToolTip": "Business\\DependencyResolvers\\Autofac\\AutofacBusinessModule.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABoAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T17:40:13.802Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Result.cs",
+              "DocumentMoniker": "C:\\Users\\Metohanhan\\source\\repos\\ReCapProject\\Core\\Utilities\\Results\\Result.cs",
+              "RelativeDocumentMoniker": "Core\\Utilities\\Results\\Result.cs",
+              "ToolTip": "C:\\Users\\Metohanhan\\source\\repos\\ReCapProject\\Core\\Utilities\\Results\\Result.cs",
+              "RelativeToolTip": "Core\\Utilities\\Results\\Result.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T20:56:47.645Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EfEntityRepositoryBase.cs",
+              "DocumentMoniker": "C:\\Users\\Metohanhan\\source\\repos\\ReCapProject\\Core\\DataAccess\\EntityFramework\\EfEntityRepositoryBase.cs",
+              "RelativeDocumentMoniker": "Core\\DataAccess\\EntityFramework\\EfEntityRepositoryBase.cs",
+              "ToolTip": "C:\\Users\\Metohanhan\\source\\repos\\ReCapProject\\Core\\DataAccess\\EntityFramework\\EfEntityRepositoryBase.cs",
+              "RelativeToolTip": "Core\\DataAccess\\EntityFramework\\EfEntityRepositoryBase.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAYwD4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-18T20:53:17.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "IBrandService.cs",
               "DocumentMoniker": "C:\\Users\\Metohanhan\\source\\repos\\ReCapProject\\Business\\Abstract\\IBrandService.cs",
               "RelativeDocumentMoniker": "Business\\Abstract\\IBrandService.cs",
@@ -86,7 +187,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "NorthwindContext.cs",
               "DocumentMoniker": "C:\\Users\\Metohanhan\\source\\repos\\ReCapProject\\DataAccess\\Concrete\\EntityFramework\\NorthwindContext.cs",
               "RelativeDocumentMoniker": "DataAccess\\Concrete\\EntityFramework\\NorthwindContext.cs",
@@ -98,20 +199,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "EfRentalDal.cs",
               "DocumentMoniker": "C:\\Users\\Metohanhan\\source\\repos\\ReCapProject\\DataAccess\\Concrete\\EntityFramework\\EfRentalDal.cs",
               "RelativeDocumentMoniker": "DataAccess\\Concrete\\EntityFramework\\EfRentalDal.cs",
               "ToolTip": "C:\\Users\\Metohanhan\\source\\repos\\ReCapProject\\DataAccess\\Concrete\\EntityFramework\\EfRentalDal.cs",
               "RelativeToolTip": "DataAccess\\Concrete\\EntityFramework\\EfRentalDal.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA4AAABbAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAIBZwA4AAABbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-15T21:03:33.361Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-15T21:03:33.361Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 4,
               "Title": "RentalManager.cs",
               "DocumentMoniker": "C:\\Users\\Metohanhan\\source\\repos\\ReCapProject\\Business\\Concrete\\RentalManager.cs",
               "RelativeDocumentMoniker": "Business\\Concrete\\RentalManager.cs",
@@ -123,7 +223,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 16,
               "Title": "CustomersController.cs",
               "DocumentMoniker": "C:\\Users\\Metohanhan\\source\\repos\\ReCapProject\\WebAPI\\Controllers\\CustomersController.cs",
               "RelativeDocumentMoniker": "WebAPI\\Controllers\\CustomersController.cs",
@@ -135,7 +235,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
               "Title": "UsersController.cs",
               "DocumentMoniker": "C:\\Users\\Metohanhan\\source\\repos\\ReCapProject\\WebAPI\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "WebAPI\\Controllers\\UsersController.cs",
@@ -147,7 +247,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "CarsController.cs",
               "DocumentMoniker": "C:\\Users\\Metohanhan\\source\\repos\\ReCapProject\\WebAPI\\Controllers\\CarsController.cs",
               "RelativeDocumentMoniker": "WebAPI\\Controllers\\CarsController.cs",
@@ -159,19 +259,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Metohanhan\\source\\repos\\ReCapProject\\WebAPI\\Program.cs",
               "RelativeDocumentMoniker": "WebAPI\\Program.cs",
               "ToolTip": "C:\\Users\\Metohanhan\\source\\repos\\ReCapProject\\WebAPI\\Program.cs",
               "RelativeToolTip": "WebAPI\\Program.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAA8AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-15T19:55:03.344Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "ICarService.cs",
               "DocumentMoniker": "C:\\Users\\Metohanhan\\source\\repos\\ReCapProject\\Business\\Abstract\\ICarService.cs",
               "RelativeDocumentMoniker": "Business\\Abstract\\ICarService.cs",
@@ -183,19 +283,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "EfCarDal.cs",
               "DocumentMoniker": "C:\\Users\\Metohanhan\\source\\repos\\ReCapProject\\DataAccess\\Concrete\\EntityFramework\\EfCarDal.cs",
               "RelativeDocumentMoniker": "DataAccess\\Concrete\\EntityFramework\\EfCarDal.cs",
               "ToolTip": "C:\\Users\\Metohanhan\\source\\repos\\ReCapProject\\DataAccess\\Concrete\\EntityFramework\\EfCarDal.cs",
               "RelativeToolTip": "DataAccess\\Concrete\\EntityFramework\\EfCarDal.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAAJAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBJwBEAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-18T11:52:35.282Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 15,
               "Title": "RentalsController.cs",
               "DocumentMoniker": "C:\\Users\\Metohanhan\\source\\repos\\ReCapProject\\WebAPI\\Controllers\\RentalsController.cs",
               "RelativeDocumentMoniker": "WebAPI\\Controllers\\RentalsController.cs",
@@ -207,7 +307,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 17,
               "Title": "ColorsController.cs",
               "DocumentMoniker": "C:\\Users\\Metohanhan\\source\\repos\\ReCapProject\\WebAPI\\Controllers\\ColorsController.cs",
               "RelativeDocumentMoniker": "WebAPI\\Controllers\\ColorsController.cs",
@@ -219,7 +319,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 18,
               "Title": "BrandsController.cs",
               "DocumentMoniker": "C:\\Users\\Metohanhan\\source\\repos\\ReCapProject\\WebAPI\\Controllers\\BrandsController.cs",
               "RelativeDocumentMoniker": "WebAPI\\Controllers\\BrandsController.cs",
@@ -231,7 +331,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 19,
               "Title": "IRentalDal.cs",
               "DocumentMoniker": "C:\\Users\\Metohanhan\\source\\repos\\ReCapProject\\DataAccess\\Abstract\\IRentalDal.cs",
               "RelativeDocumentMoniker": "DataAccess\\Abstract\\IRentalDal.cs",
