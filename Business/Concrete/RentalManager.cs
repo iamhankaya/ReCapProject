@@ -1,5 +1,6 @@
 ﻿using Business.Abstract;
 using Business.Constants;
+using Core.Utilities.Business;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
@@ -21,61 +22,74 @@ namespace Business.Concrete
             _rentalDal = rentalDal;
         }
 
-        public Result Add(Rental entity)
+        public IResult Add(Rental entity)
         {
             _rentalDal.Add(entity);
             return new SuccessResult(Messages.SuccessfullyAdded);
         }
 
-        public Result Delete(Rental entity)
+        public IResult Delete(Rental entity)
         {
             _rentalDal.Delete(entity);
             return new SuccessResult(Messages.SuccessfullyDeleted);
         }
 
-        public DataResult<List<Rental>> GetAll()
+        public IDataResult<List<Rental>> GetAll()
         {
             return new SuccessDataResult<List<Rental>>(_rentalDal.GetAll(),"asd");
         }
 
-        public DataResult<List<SpesificCarRentalDetail>> GetCarRentalDetails(int carId)
+        public IDataResult<List<SpesificCarRentalDetail>> GetCarRentalDetails(int carId)
         {
             return new SuccessDataResult<List<SpesificCarRentalDetail>>(_rentalDal.GetCarRentDetail(carId));
         }
 
-        public DataResult<List<SpesificCustomerRentalDetail>> GetCustomerRentalDetails(int customerId)
+        public IDataResult<List<SpesificCustomerRentalDetail>> GetCustomerRentalDetails(int customerId)
         {
             return new SuccessDataResult<List<SpesificCustomerRentalDetail>>(_rentalDal.GetCustomerRentalDetails(customerId));
         }
 
-        public Result RentCar(int customerId, int carId)
+        public IResult RentCar(int customerId, int carId)
         {
-            foreach (var r in _rentalDal.GetAll(r => r.CarId==carId))
-            {
-                if (r.ReturnDate == "Not Returned")
-                {
-                    return new ErrorResult("Araba henüz geri verilmemiş");
+            var result = BusinessRules.Run(CheckIfTheCarAlreadyRented(carId));
+            if (!result.IsSuccess)
+                return result;
 
-                }
-            }
-            _rentalDal.RentCar(customerId, carId,this.GetAll().data == null ? 1 :this.GetAll().data.Count + 1 );
+                _rentalDal.RentCar(customerId, carId,this.GetAll().data == null ? 1 :this.GetAll().data.Count + 1 );
             return new SuccessResult(Messages.SuccessfullyRented);
         }
 
-        public Result ReturnCar(int carId)
+        public IResult ReturnCar(int carId)
         {
-            if (_rentalDal.ReturnCar(carId) != null)
-            {
-                _rentalDal.ReturnCar(carId);
-                return new SuccessResult(Messages.SuccessfullyReturned);
-            }
-            return new ErrorResult("Araba zaten kiralanmamış");
+           var result = BusinessRules.Run(CheckIfCarIdInReturnCarNull(carId));
+           if (!result.IsSuccess)
+                return result;
+           _rentalDal.ReturnCar(carId);
+           return new SuccessResult(Messages.SuccessfullyReturned);
+
         }
 
-        public Result Update(Rental entity)
+        public IResult Update(Rental entity)
         {
             _rentalDal.Update(entity);
             return new SuccessResult(Messages.SuccessfullyUpdated);
+        }
+
+        private IResult CheckIfCarIdInReturnCarNull(int carId)
+        {
+            if (_rentalDal.ReturnCar(carId) == null)
+                return new ErrorResult(Messages.ThisCarAlreadyReturned);
+            return null;
+        }
+        
+        private IResult CheckIfTheCarAlreadyRented(int carId)
+        {
+            foreach (var r in _rentalDal.GetAll(r => r.CarId == carId))
+            {
+                if (r.ReturnDate == "Not Returned")
+                    return new ErrorResult("Araba henüz geri verilmemiş");
+            }
+            return null;
         }
     }
 }

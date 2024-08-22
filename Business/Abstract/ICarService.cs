@@ -11,8 +11,8 @@ namespace Business.Abstract
 {
     public interface ICarService : IService<Car>
     {
-        DataResult<List<CarDetailsDTO>> GetCarDetails();
-        DataResult<List<Car>> GetAllByBrandId(int id);
-        DataResult<List<Car>> GetAllByColorId(int id);
+        IDataResult<List<CarDetailsDTO>> GetCarDetails();
+        IDataResult<List<Car>> GetAllByBrandId(int id);
+        IDataResult<List<Car>> GetAllByColorId(int id);
     }
 }

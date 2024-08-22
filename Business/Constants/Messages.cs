@@ -17,5 +17,7 @@ namespace Business.Constants
         public static string InvalidCarDescription = "Araba açıklaması 2 karakterden büyük olmalıdır.";
         public static string SuccessfullyRented = "Araba başarıyla kiralanmıştır";
         public static string SuccessfullyReturned = "Araba başarıyla iade edilmiştir";
+        internal static string EmailAlreadyExists=  "Bu eposta zaten kullanılıyor";
+        internal static string ThisCarAlreadyReturned;
     }
 }

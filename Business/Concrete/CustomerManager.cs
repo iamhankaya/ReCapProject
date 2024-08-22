@@ -20,24 +20,24 @@ namespace Business.Concrete
             _customerDal = customerDal;
         }
 
-        public Result Add(Customer entity)
+        public IResult Add(Customer entity)
         {
             _customerDal.Add(entity);
             return new SuccessResult(Messages.SuccessfullyAdded);
         }
 
-        public Result Delete(Customer entity)
+        public IResult Delete(Customer entity)
         {
             _customerDal.Delete(entity);
             return new SuccessResult(Messages.SuccessfullyDeleted);
         }
 
-        public DataResult<List<Customer>> GetAll()
+        public IDataResult<List<Customer>> GetAll()
         {
             return new SuccessDataResult<List<Customer>>(_customerDal.GetAll(),"asd");
         }
 
-        public Result Update(Customer entity)
+        public IResult Update(Customer entity)
         {
             _customerDal.Update(entity);
             return new SuccessResult(Messages.SuccessfullyUpdated);
