@@ -19,5 +19,6 @@ namespace Business.Constants
         public static string SuccessfullyReturned = "Araba başarıyla iade edilmiştir";
         internal static string EmailAlreadyExists=  "Bu eposta zaten kullanılıyor";
         internal static string ThisCarAlreadyReturned;
+        internal static string ImageLimitExceded;
     }
 }
