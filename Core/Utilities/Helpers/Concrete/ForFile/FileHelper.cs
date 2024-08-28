@@ -1,4 +1,4 @@
-﻿using Core.Utilities.Helpers.Abstract;
+﻿using Core.Utilities.Helpers.Abstract.ForFile;
 using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Core.Utilities.Helpers.Concrete
+namespace Core.Utilities.Helpers.Concrete.ForFile
 {
     public class FileHelper : IFileHelper
     {
@@ -36,7 +36,7 @@ namespace Core.Utilities.Helpers.Concrete
             }
             else
             {
-                
+
             }
         }
 
@@ -54,7 +54,7 @@ namespace Core.Utilities.Helpers.Concrete
             }
             else
             {
-                
+
             }
 
         }

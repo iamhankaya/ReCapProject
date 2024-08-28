@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Concrete\User.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Abstract\" />
   </ItemGroup>
 

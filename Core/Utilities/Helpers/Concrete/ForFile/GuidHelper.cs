@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Core.Utilities.Helpers.Concrete
+namespace Core.Utilities.Helpers.Concrete.ForFile
 {
     public static class GuidHelper
     {

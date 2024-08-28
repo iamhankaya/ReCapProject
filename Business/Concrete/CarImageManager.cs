@@ -1,7 +1,7 @@
 ﻿using Business.Abstract;
 using Business.Constants;
 using Core.Utilities.Business;
-using Core.Utilities.Helpers.Abstract;
+using Core.Utilities.Helpers.Abstract.ForFile;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
