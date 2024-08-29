@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Business.ValidationRules.FluentValidation;
 using Core.Aspects.Autofac.Validation;
+using Business.BusinessAspects.Autofac;
 
 namespace Business.Concrete
 {
@@ -37,7 +38,7 @@ namespace Business.Concrete
             _carDal.Delete(entity);
             return new SuccessResult(Messages.SuccessfullyDeleted);
         }
-
+        [SecuredOperation("cars.getall")]
         public IDataResult<List<Car>> GetAll()
         {
             return new SuccessDataResult<List<Car>>(_carDal.GetAll(),Messages.CarsSuccessfullyListed);

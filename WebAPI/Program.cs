@@ -9,6 +9,10 @@ using Autofac.Core;
 using Microsoft.OpenApi.Models;
 using WebAPI;
 using Core.IoC;
+using Core.Utilities.Security.JWT;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using Core.Utilities.Helpers.Concrete.ForSecurity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,6 +34,22 @@ builder.Services.AddSwaggerGen(c =>
 });
 
 builder.Host.UseServiceProviderFactory(services => new AutofacServiceProviderFactory()).ConfigureContainer<ContainerBuilder>(builder => { builder.RegisterModule(new AutofacBusinessModule()); });
+var Configuration = builder.Configuration;
+var tokenOptions = Configuration.GetSection("TokenOptions").Get<TokenOptions>();
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateLifetime = true,
+            ValidIssuer = tokenOptions.Issuer,
+            ValidAudience = tokenOptions.Audience,
+            ValidateIssuerSigningKey = true,
+            IssuerSigningKey = SecurityKeyHelper.CreateSecurityKey(tokenOptions.SecurityKey)
+        };
+    });
 
 var app = builder.Build();
 
@@ -41,6 +61,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 

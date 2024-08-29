@@ -4,7 +4,9 @@ using Business.Abstract;
 using Business.Concrete;
 using Castle.DynamicProxy;
 using Core.Utilities.Helpers.Abstract.ForFile;
+using Core.Utilities.Helpers.Abstract.ForSecurity;
 using Core.Utilities.Helpers.Concrete.ForFile;
+using Core.Utilities.Helpers.Concrete.ForSecurity;
 using Core.Utilities.Interceptors;
 using DataAccess.Abstract;
 using DataAccess.Concrete.EntityFramework;
@@ -42,6 +44,9 @@ namespace Business.DependencyResolvers.Autofac
             builder.RegisterType<EfCarImageDal>().As<ICarImageDal>();
 
             builder.RegisterType<FileHelper>().As<IFileHelper>();
+
+            builder.RegisterType<AuthManager>().As<IAuthService>();
+            builder.RegisterType<JwtHelper>().As<ITokenHelper>();
 
             var assembly = System.Reflection.Assembly.GetExecutingAssembly();
 

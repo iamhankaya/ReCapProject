@@ -1,6 +1,7 @@
 ﻿using Business.Abstract;
 using DataAccess.Abstract;
 using Entities.Concrete;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers
@@ -17,6 +18,7 @@ namespace WebAPI.Controllers
         }
 
         [HttpGet("CarsGetAll")]
+        
         public IActionResult CarsGetAll()
         {
             var result = _carService.GetAll();

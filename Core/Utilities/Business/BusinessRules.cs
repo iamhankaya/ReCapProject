@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Core.Utilities.Business
 {
-    public static class BusinessRules
+    public class BusinessRules
     {
         public static IResult Run(params IResult[] results)
         {

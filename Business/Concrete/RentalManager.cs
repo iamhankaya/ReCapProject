@@ -51,8 +51,8 @@ namespace Business.Concrete
 
         public IResult RentCar(int customerId, int carId)
         {
-            var result = BusinessRules.Run(CheckIfTheCarAlreadyRented(carId));
-            if (!result.IsSuccess)
+            IResult result = BusinessRules.Run(CheckIfTheCarAlreadyRented(carId));  
+            if (result != null)
                 return result;
 
                 _rentalDal.RentCar(customerId, carId,this.GetAll().data == null ? 1 :this.GetAll().data.Count + 1 );
@@ -61,9 +61,10 @@ namespace Business.Concrete
 
         public IResult ReturnCar(int carId)
         {
-           var result = BusinessRules.Run(CheckIfCarIdInReturnCarNull(carId));
-           if (!result.IsSuccess)
+           IResult result = BusinessRules.Run(CheckIfCarIdInReturnCarNull(carId));
+           if (result != null)
                 return result;
+
            _rentalDal.ReturnCar(carId);
            return new SuccessResult(Messages.SuccessfullyReturned);
 
@@ -79,7 +80,7 @@ namespace Business.Concrete
         {
             if (_rentalDal.ReturnCar(carId) == null)
                 return new ErrorResult(Messages.ThisCarAlreadyReturned);
-            return null;
+            return new SuccessResult();
         }
         
         private IResult CheckIfTheCarAlreadyRented(int carId)
@@ -89,7 +90,7 @@ namespace Business.Concrete
                 if (r.ReturnDate == "Not Returned")
                     return new ErrorResult("Araba henüz geri verilmemiş");
             }
-            return null;
+            return new SuccessResult();
         }
     }
 }
