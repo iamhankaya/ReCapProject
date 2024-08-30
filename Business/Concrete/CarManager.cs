@@ -12,6 +12,8 @@ using System.Threading.Tasks;
 using Business.ValidationRules.FluentValidation;
 using Core.Aspects.Autofac.Validation;
 using Business.BusinessAspects.Autofac;
+using Core.Aspects.Autofac.Caching;
+using Core.Aspects.Autofac.Performance;
 
 namespace Business.Concrete
 {
@@ -25,6 +27,7 @@ namespace Business.Concrete
         }
 
         [ValidationAspect(typeof(CarValidator))]
+        [CacheRemoveAspect("ICarService.Get")]
         public IResult Add(Car entity)
         {
             
@@ -38,7 +41,9 @@ namespace Business.Concrete
             _carDal.Delete(entity);
             return new SuccessResult(Messages.SuccessfullyDeleted);
         }
-        [SecuredOperation("cars.getall")]
+        //[SecuredOperation("cars.getall")]
+        [CacheAspect]
+        [PerformanceAspect(3)]
         public IDataResult<List<Car>> GetAll()
         {
             return new SuccessDataResult<List<Car>>(_carDal.GetAll(),Messages.CarsSuccessfullyListed);

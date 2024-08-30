@@ -8,11 +8,13 @@ using DataAccess.Concrete.EntityFramework;
 using Autofac.Core;
 using Microsoft.OpenApi.Models;
 using WebAPI;
-using Core.IoC;
 using Core.Utilities.Security.JWT;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Core.Utilities.Helpers.Concrete.ForSecurity;
+using Core.Utilities.IoC;
+using Core.DependencyResolvers.Autofac;
+using Core.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,7 +26,9 @@ builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 ServiceTool.Create(builder.Services);
-
+builder.Services.AddDependencyResolvers(new ICoreModule[]{
+    new CoreModule()
+});
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "RentACar API", Version = "v1" });
