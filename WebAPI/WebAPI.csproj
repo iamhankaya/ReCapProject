@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="CarImagesRepo\CarImages\" />
+    <None Include="wwwroot\images\6c959b9a-c844-4ff2-aaa4-44737d759852.jpg" />
   </ItemGroup>
 
 </Project>

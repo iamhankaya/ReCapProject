@@ -8,7 +8,7 @@ namespace Core.Utilities.Helpers.Concrete.ForFile
 {
     public static class FileType
     {
-        public const string images = "CarImages";
-        public const string root = "CarImagesRepo/";
+        public const string images = "images";
+        public const string root = "wwwroot/";
     }
 }

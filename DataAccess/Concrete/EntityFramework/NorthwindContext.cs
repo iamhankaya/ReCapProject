@@ -25,6 +25,20 @@ namespace DataAccess.Concrete.EntityFramework
         public DbSet<CarImage> CarImages { get; set; }
         public DbSet<OperationClaim> OperationClaims { get; set; }
         public DbSet<UserOperationClaim> UserOperationClaims { get; set; }
+        public DbSet<CreditCard> CreditCards { get; set; }
+        public DbSet<PaymentDetail> PaymentDetails { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            // Burada model yapılandırmalarınızı yapıyorsunuz
+            modelBuilder.Entity<CreditCard>(entity =>
+            {
+                entity.HasKey(e => e.CardId); // CreditCard için birincil anahtarı açıkça tanımlayın
+                entity.Property(e => e.CardId).ValueGeneratedOnAdd();
+            });
+
+            // Eğer başka yapılandırmalar varsa, burada devam edin...
+        }
 
     }
 }

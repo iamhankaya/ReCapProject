@@ -17,5 +17,6 @@ namespace DataAccess.Abstract
         Rental ReturnCar(int carId);
         List<SpesificCarRentalDetail> GetCarRentDetail(int carId,Expression<Func<IDto, bool>> filter = null);
         List<SpesificCustomerRentalDetail> GetCustomerRentalDetails(int customerId,Expression<Func<IDto, bool>> filter = null);
+        List<RentalDetailDto> GetRentalDetails();
     }
 }

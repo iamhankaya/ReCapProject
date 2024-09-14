@@ -20,7 +20,7 @@ public class CarImagesController : ControllerBase
         {
             return Ok(result);
         }
-        return BadRequest();
+        return BadRequest(result);
     }
 
     [HttpGet("getbyid")]
@@ -31,7 +31,7 @@ public class CarImagesController : ControllerBase
         {
             return Ok(result);
         }
-        return BadRequest();
+        return BadRequest(result);
     }
 
     [HttpGet("getbycarid")]
@@ -42,14 +42,14 @@ public class CarImagesController : ControllerBase
         {
             return Ok(result);
         }
-        return BadRequest();
+        return BadRequest(result);
     }
 
     [HttpPost("add")]
     public IActionResult Add([FromForm] IFormFile file, [FromForm] int carId)
     { //file ve carId lazım kullanıcı tarafından.
-        CarImage carImage = new() { CarId = carId };
-        var result = _carImageService.Add(carImage,file);
+        CarImage carImage = new() {  };
+        var result = _carImageService.Add(carImage,carId,file);
         if (result.IsSuccess)
         {
             return Ok(result);
@@ -66,7 +66,7 @@ public class CarImagesController : ControllerBase
         {
             return Ok(result);
         }
-        return BadRequest();
+        return BadRequest(result);
     }
 
     [HttpDelete("delete")]
@@ -77,6 +77,6 @@ public class CarImagesController : ControllerBase
         {
             return Ok(result);
         }
-        return BadRequest();
+        return BadRequest(result);
     }
 }

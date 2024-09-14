@@ -24,7 +24,6 @@ namespace DataAccess.Concrete.EntityFramework
                 RentDate = DateTime.Now.ToString(),
                 ReturnDate = "Not Returned"
             };
-
             this.Add(rental);
         }
         public Rental ReturnCar(int carId)
@@ -78,7 +77,7 @@ namespace DataAccess.Concrete.EntityFramework
                              select new SpesificCustomerRentalDetail
                              {
                                  CustomerId = c.Id,
-                                 CustomerName = u.FirstName,
+                                 CustomerName = u.FirstName+" "+u.LastName,
                                  RentalId = r.Id,
                                  RentDate = r.RentDate,
                                  ReturnDate = r.ReturnDate
@@ -94,6 +93,33 @@ namespace DataAccess.Concrete.EntityFramework
                 return CustomerRentDetails;
             }
         }
-       
+
+        public List<RentalDetailDto> GetRentalDetails()
+        {
+            using (NorthwindContext context = new NorthwindContext())
+            {
+                var result = from r in context.Rentals
+                             join c in context.Customers
+                             on r.CustomerId equals c.Id
+                             join u in context.Users
+                             on c.UserId equals u.Id
+                             join ca in context.Cars
+                             on r.CarId equals ca.Id
+                             join b in context.Brands
+                             on ca.BrandId equals b.BrandId
+                             select new RentalDetailDto
+                             {
+                                 BrandName = b.BrandName,
+                                 CustomerName = u.FirstName + " " + u.LastName,
+                                 RentalId = r.Id,
+                                 ReturnDate = r.ReturnDate,
+                                 RentDate = r.RentDate,
+                                 CarId=ca.Id,
+                                 CustomerId=c.Id
+                                 
+                             };
+                return result.ToList();
+            }
+        }
     }
 }

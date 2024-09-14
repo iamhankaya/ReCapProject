@@ -25,17 +25,18 @@ namespace Business.Concrete
             _fileHelper = fileHelper;
         }
 
-        public IResult Add (CarImage carImage, IFormFile file)
+        public IResult Add (CarImage carImage,int carId, IFormFile file)
         {
             IResult? result = BusinessRules.Run(CountByCarId(carImage));
             if (result != null)
             {
                 return result;
             }
-            carImage.Id = 1;
+            
             string guid = _fileHelper.Add(file);
             carImage.ImagePath = guid;
             carImage.Date = DateTime.Now;
+            carImage.CarId = carId;
             _carImageDal.Add(carImage);
             return new SuccessDataResult<CarImage>(carImage);
 
@@ -72,7 +73,7 @@ namespace Business.Concrete
             var carImages = _carImageDal.GetAll(c => c.CarId == carId);
             if (carImages.Count == 0)
             {
-                carImages.Add(new CarImage() { CarId = carId, ImagePath = "default.png" });
+                carImages.Add(new CarImage() { CarId = carId, ImagePath = "0IB8NcTv_400x400.jpg" });
                 return new SuccessDataResult<List<CarImage>>(carImages);
             }
             return new SuccessDataResult<List<CarImage>>(carImages);

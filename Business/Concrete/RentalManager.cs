@@ -49,6 +49,11 @@ namespace Business.Concrete
             return new SuccessDataResult<List<SpesificCustomerRentalDetail>>(_rentalDal.GetCustomerRentalDetails(customerId));
         }
 
+        public IDataResult<List<RentalDetailDto>> GetRentalDetails()
+        {
+            return new SuccessDataResult<List<RentalDetailDto>>(_rentalDal.GetRentalDetails());
+        }
+
         public IResult RentCar(int customerId, int carId)
         {
             IResult result = BusinessRules.Run(CheckIfTheCarAlreadyRented(carId));  

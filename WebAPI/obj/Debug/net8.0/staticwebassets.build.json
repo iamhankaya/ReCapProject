@@ -1,11 +1,77 @@
 {
   "Version": 1,
-  "Hash": "7/8N/7vR8Gil4oF52j1JyaDaDh/w/bwrwTANJiMV94U=",
+  "Hash": "ulm1iD6cGAE7qlT4flaod+X+wVXwiU4fHhBkexcVtQs=",
   "Source": "WebAPI",
   "BasePath": "_content/WebAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "WebAPI\\wwwroot",
+      "Source": "WebAPI",
+      "ContentRoot": "C:\\Users\\Metohanhan\\Desktop\\ReCapProject\\WebAPI\\wwwroot\\",
+      "BasePath": "_content/WebAPI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Metohanhan\\Desktop\\ReCapProject\\WebAPI\\wwwroot\\images\\0IB8NcTv_400x400.jpg",
+      "SourceId": "WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Metohanhan\\Desktop\\ReCapProject\\WebAPI\\wwwroot\\",
+      "BasePath": "_content/WebAPI",
+      "RelativePath": "images/0IB8NcTv_400x400.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\0IB8NcTv_400x400.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Metohanhan\\Desktop\\ReCapProject\\WebAPI\\wwwroot\\images\\23658eda-a2e5-4026-9bea-c562a259be21.png",
+      "SourceId": "WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Metohanhan\\Desktop\\ReCapProject\\WebAPI\\wwwroot\\",
+      "BasePath": "_content/WebAPI",
+      "RelativePath": "images/23658eda-a2e5-4026-9bea-c562a259be21.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\23658eda-a2e5-4026-9bea-c562a259be21.png"
+    },
+    {
+      "Identity": "C:\\Users\\Metohanhan\\Desktop\\ReCapProject\\WebAPI\\wwwroot\\images\\6c959b9a-c844-4ff2-aaa4-44737d759852.jpg",
+      "SourceId": "WebAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Metohanhan\\Desktop\\ReCapProject\\WebAPI\\wwwroot\\",
+      "BasePath": "_content/WebAPI",
+      "RelativePath": "images/6c959b9a-c844-4ff2-aaa4-44737d759852.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\6c959b9a-c844-4ff2-aaa4-44737d759852.jpg"
+    }
+  ]
 }

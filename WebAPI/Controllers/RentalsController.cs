@@ -33,7 +33,7 @@ namespace WebAPI.Controllers
             }
             return BadRequest(result);
         }
-        [HttpPut("ReturnCar")]
+        [HttpPost("ReturnCar")]
         public IActionResult ReturnCar(int carId)
         {
             var result = _rentalService.ReturnCar(carId);
@@ -61,6 +61,15 @@ namespace WebAPI.Controllers
             {
                 return Ok(result);
             }
+            return BadRequest(result);
+        }
+        [HttpGet("GetRentalDetails")]
+
+        public IActionResult GetRentalDetails()
+        {
+            var result = _rentalService.GetRentalDetails();
+            if (result.IsSuccess)
+                return Ok(result);
             return BadRequest(result);
         }
 

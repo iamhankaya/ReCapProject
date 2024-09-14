@@ -27,7 +27,7 @@ namespace Business.Concrete
         }
 
         [ValidationAspect(typeof(CarValidator))]
-        [CacheRemoveAspect("ICarService.Get")]
+       // [CacheRemoveAspect("ICarService.Get")]
         public IResult Add(Car entity)
         {
             
@@ -49,19 +49,19 @@ namespace Business.Concrete
             return new SuccessDataResult<List<Car>>(_carDal.GetAll(),Messages.CarsSuccessfullyListed);
         }
 
-        public IDataResult<List<Car>> GetAllByBrandId(int brandId)
+        public IDataResult<List<CarDetailsDTO>> GetAllByBrandId(int brandId)
         {
-            return new SuccessDataResult<List<Car>>(_carDal.GetAll(p => p.BrandId == brandId), Messages.CarsSuccessfullyListed);
+            return new SuccessDataResult<List<CarDetailsDTO>>(_carDal.GetCarDetail(brandId,null), Messages.CarsSuccessfullyListed);
         }
 
-        public IDataResult<List<Car>> GetAllByColorId(int colorId)
+        public IDataResult<List<CarDetailsDTO>> GetAllByColorId(int colorId)
         {
-            return new SuccessDataResult<List<Car>>(_carDal.GetAll(p => p.ColorId == colorId), Messages.CarsSuccessfullyListed);
+            return new SuccessDataResult<List<CarDetailsDTO>>(_carDal.GetCarDetail(null,colorId), Messages.CarsSuccessfullyListed);
         }
 
         public IDataResult<List<CarDetailsDTO>> GetCarDetails()
         {
-            return new SuccessDataResult<List<CarDetailsDTO>>(_carDal.GetCarDetail(),Messages.CarsSuccessfullyListed);
+            return new SuccessDataResult<List<CarDetailsDTO>>(_carDal.GetCarDetail(null,null),Messages.CarsSuccessfullyListed);
         }
 
         public IResult Update(Car entity)

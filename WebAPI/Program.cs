@@ -15,6 +15,7 @@ using Core.Utilities.Helpers.Concrete.ForSecurity;
 using Core.Utilities.IoC;
 using Core.DependencyResolvers.Autofac;
 using Core.Extensions;
+using Microsoft.Extensions.FileProviders;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,6 +24,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddCors();
 
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 ServiceTool.Create(builder.Services);
@@ -63,11 +65,17 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.UseCors(builder => builder.WithOrigins("http://localhost:4200").AllowAnyHeader());
+
+
 
 app.UseHttpsRedirection();
+app.UseStaticFiles();
 
+// wwwroot klasörü varsayýlan olarak kullanýlýr
+
+app.UseRouting();
 app.UseAuthentication();
-
 app.UseAuthorization();
 
 app.MapControllers();

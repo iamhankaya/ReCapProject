@@ -28,5 +28,6 @@ namespace Business.Constants
         internal static string? AuthorizationDenied="Erişim reddedildi";
         internal static string UserNotFound="Kullanıcı bulunamadı";
         internal static string UserAlreadyExists="Kullanıcı zaten kayıtlı";
+        internal static string CustomersSuccessfullyListed;
     }
 }
